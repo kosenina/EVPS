@@ -1,0 +1,128 @@
+{
+  "routes": [
+    {
+      "id": "1",
+      "start_node": "[NODE-ID]",
+      "destination_node": "[NODE-ID]",
+      "is_one_way": false,
+      "preemption_range": 250
+    },
+    {
+      "id": "2",
+      "start_node": "[NODE-ID]",
+      "destination_node": "[NODE-ID]",
+      "is_one_way": false,
+      "preemption_range": 250
+    },
+    {
+      "id": "3",
+      "start_node": "[NODE-ID]",
+      "destination_node": "[NODE-ID]",
+      "is_one_way": true,
+      "preemption_range": 250
+    },
+    {
+      "id": "4",
+      "start_node": "[NODE-ID]",
+      "destination_node": "[NODE-ID]",
+      "is_one_way": false,
+      "preemption_range": 250
+    },
+    {
+      "id": "5",
+      "start_node": "[NODE-ID]",
+      "destination_node": "[NODE-ID]",
+      "is_one_way": false,
+      "preemption_range": 250
+    },
+    {
+      "id": "6",
+      "start_node": "[NODE-ID]",
+      "destination_node": "[NODE-ID]",
+      "is_one_way": false,
+      "preemption_range": 250
+    }
+  ],
+  "vehicles": [
+        {
+      "route": "5",
+      "start_delay": 350,
+      "path_finder_mode": 3,
+      "path_finder_algorithm": 3
+    }
+  ],
+  "vehicle_modes": [
+    {
+      "id": 0,
+      "preemption_mode": 0,
+      "reset_mode": 0 
+    },
+    {
+      "id": 1,
+      "preemption_mode": 1,
+      "reset_mode": 0 
+    },
+    {
+      "id": 2,
+      "preemption_mode": 1,
+      "reset_mode": 1
+    },
+    {
+      "id": 3,
+      "preemption_mode": 2,
+      "reset_mode": 0
+    },
+    {
+      "id": 4,
+      "preemption_mode": 2,
+      "reset_mode": 1
+    },
+    {
+      "id": 5,
+      "preemption_mode": 3,
+      "reset_mode": 0
+    },
+    {
+      "id": 6,
+      "preemption_mode": 3,
+      "reset_mode": 1
+    },
+    {
+      "id": 7,
+      "preemption_mode": 4,
+      "reset_mode": 0
+    },
+    {
+      "id": 8,
+      "preemption_mode": 4,
+      "reset_mode": 1
+    }
+  ],
+  "map": {
+    "map_location": "../data_set/[DATASET-FOLDER-NAME]/map.net.xml",
+    "landmarks_num": 3,
+    "edges_occupancy_file": "../data_set/[DATASET-FOLDER-NAME]/edges_occupancy.pkl"
+  },
+  "general": {
+    "base_dir" : "../data_set/[DATASET-FOLDER-NAME]",
+    "max_num_vehicles": 700,
+    "max_depart_delay": "25",
+    "debug_print" : false,
+    "debug_plot" : false,
+    "debug_output_dir" : "../data_set/[DATASET-FOLDER-NAME]/output",
+    "statistics_output_dir" : "../data_set/[DATASET-FOLDER-NAME]/statistics",
+    "plot_statistics" : false,
+    "export_tl_per_lane" : true,
+    "export_vehicle_stats" : true,
+    "export_vehicle_route_stats" : true,
+    "export_route_stats" : true,
+    "export_rtc_logs" : false,
+    "num_of_iterations": 3
+  },
+  "random_trips": {
+    "min-distance": 800,
+    "period": 0.3,
+    "binomial": "100",
+    "end": 2500
+  }
+}

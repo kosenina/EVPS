@@ -1,0 +1,21 @@
+<additional>
+    <vType id="intervention_vehicle"
+           vClass="emergency"
+           accel="3.3"
+           decel="5"
+           sigma="0.5"
+           maxSpeed="70"
+           speedFactor="1.5"
+           color="1,0,0"
+           guiShape="emergency"
+           length="4.8"
+           lcStrategic="100"
+           lcCooperative="0.0"
+           lcSpeedGain="100"
+           lcKeepRight="100"
+           latAlignment="left"
+           lcPushy="1"
+           lcAssertive="1"
+           jmDriveAfterRedTime="1000"
+    />
+ </additional>
